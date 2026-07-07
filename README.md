@@ -99,11 +99,11 @@ Realistic timeline **~4–6 months**; bottlenecks are MIMIC credentialing and IR
 
 ## Team
 
-Vân · Nhân · Hùng · Tâm (project lead). Role split in `docs/03_DECISIONS_LOG.md`.
+Vân · Nhân · Dang Nguyen · Hoàng Tâm · Hùng · Tâm (project lead). Role split in `docs/03_DECISIONS_LOG.md`.
 
 ## Status
 
-Planning complete; collaboration/IRB outreach to Dr. Kan Li (WashU Cardiology) underway. See `docs/collaboration/` and Decision D13.
+Planning complete; collaboration/IRB outreach to PI or co-PI and senior author. See `docs/collaboration/` and Decision D13.
 
 ## Data & ethics
 
