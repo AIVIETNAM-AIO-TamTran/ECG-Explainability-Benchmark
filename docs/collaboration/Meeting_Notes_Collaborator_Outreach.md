@@ -1,16 +1,16 @@
-# Zoom Meeting Notes — Dr. Kan Li
+# Zoom Meeting Notes — Prospective PI / Co-PI
 ## ECG xAI–AMI Benchmark Project · Collaboration Discussion
 
-**Goal for this meeting:** (1) get Dr. Li genuinely interested in the science, (2) confirm whether he'll serve as PI/co-PI for the IRB submission, (3) clarify his desired level of involvement (PI only vs. also a rater/co-author), (4) leave with a concrete next step and timeline.
+**Goal for this meeting:** (1) get the prospective collaborator genuinely interested in the science, (2) confirm whether they'll serve as PI/co-PI for the IRB submission, (3) clarify their desired level of involvement (PI only vs. also a rater/co-author), (4) leave with a concrete next step and timeline.
 
 ---
 
 ## 0. Opening (1–2 min)
 
-- Thank him for making time, acknowledge his echo/CNN imaging work as the reason you reached out.
-- One-line framing so he knows where this is going before the details:
-  > "This is a benchmark study asking whether the 'explanations' deep learning models give for ECG diagnoses actually point to the same evidence a cardiologist would use — and I'm hoping to find a WashU collaborator who could help sponsor this through IRB and maybe weigh in on the clinical side."
-- Ask permission to walk through a short overview, then leave plenty of room for his questions/reactions.
+- Thank them for making time, acknowledge their relevant clinical/imaging research as the reason you reached out.
+- One-line framing so they know where this is going before the details:
+  > "This is a benchmark study asking whether the 'explanations' deep learning models give for ECG diagnoses actually point to the same evidence a cardiologist would use — and I'm hoping to find a collaborator who could help sponsor this through IRB and maybe weigh in on the clinical side."
+- Ask permission to walk through a short overview, then leave plenty of room for their questions/reactions.
 
 ---
 
@@ -47,8 +47,8 @@ Frame it as four stages, matching the proposal:
 Lay out clearly what you need, in this order:
 
 1. **IRB sponsorship as PI or co-PI** — specifically for the lightweight expert-rating component (Phase 5). This involves 2–3 cardiologists rating de-identified, public ECG images; no patient contact, no PHI. Likely qualifies for exempt/expedited review.
-2. **(Optional, gauge his interest)** Whether he'd like to be one of the 2–3 rating cardiologists himself, or help recruit colleagues who would.
-3. **(Optional)** Whether he'd want a co-author role shaping the clinical framing / concordance-metric definition (which ECG regions count as "correct" evidence for MI) — this is a natural fit given his imaging/CNN background.
+2. **(Optional, gauge their interest)** Whether they'd like to be one of the 2–3 rating cardiologists themselves, or help recruit colleagues who would.
+3. **(Optional)** Whether they'd want a co-author role shaping the clinical framing / concordance-metric definition (which ECG regions count as "correct" evidence for MI) — this is a natural fit given a relevant imaging/CNN background.
 
 **Be explicit about time cost**, since this is what most people actually want to know before saying yes:
 - PI/IRB sponsorship: mostly front-loaded (protocol review + signature), light ongoing oversight.
@@ -61,18 +61,18 @@ Lay out clearly what you need, in this order:
 
 Use this as the "here's the plan" walk-through — condensed from the full runbook, phase by phase:
 
-| Phase | What happens | Timing | His involvement |
+| Phase | What happens | Timing | Their involvement |
 |---|---|---|---|
 | **0. Setup** | Repo, environment, MIMIC-IV-ECG credentialing request, OSF pre-registration | Week 0–2 | None yet |
 | **1. Data prep** | Download PTB-XL (public), define MI vs. Normal cohort, use official patient-stratified splits | Weeks 1–3 | None yet |
 | **2. Model training** | Train and freeze a 1D-ResNet MI detector; report AUROC/sensitivity/specificity | Weeks 3–5 | None yet |
 | **3. Attribution generation** | Run Grad-CAM, saliency, Integrated Gradients, DeepLIFT on correctly-classified MI cases | Weeks 5–6 | None yet |
 | **4. Explanation-quality metrics (core)** | Faithfulness, sanity checks, and the clinical-concordance metric (needs a cardiologist's input on what counts as correct MI evidence) | Weeks 6–9 | **Light input here** — reviewing/sanity-checking the concordance-region definitions |
-| **5. Expert rating** | IRB submission → recruit 2–3 cardiologists → blinded rating of ~40–60 maps → analyze agreement | Runs in parallel, weeks 5–10 (mostly a calendar dependency) | **His main role** — IRB sponsorship, possibly rating |
+| **5. Expert rating** | IRB submission → recruit 2–3 cardiologists → blinded rating of ~40–60 maps → analyze agreement | Runs in parallel, weeks 5–10 (mostly a calendar dependency) | **Their main role** — IRB sponsorship, possibly rating |
 | **6. External validation** | Re-run the full pipeline on MIMIC-IV-ECG; check if explanation rankings hold across hospitals | Weeks 9–11 | None |
 | **7. Writing & release** | Manuscript, open-source code release, target venue (Comput Biol Med / JAMIA / EHJ-Digital Health) | Weeks 11–14 | **Co-author review** of clinical framing/discussion |
 
-**Overall realistic timeline: ~4–6 months**, with the IRB determination and cardiologist scheduling being the two calendar-driven bottlenecks — which is exactly why getting his sponsorship locked in early matters.
+**Overall realistic timeline: ~4–6 months**, with the IRB determination and cardiologist scheduling being the two calendar-driven bottlenecks — which is exactly why getting their sponsorship locked in early matters.
 
 ---
 
@@ -85,10 +85,10 @@ Use this as the "here's the plan" walk-through — condensed from the full runbo
   Because MI has spatially/temporally well-defined diagnostic evidence (ST-segment, Q-waves, specific leads per territory) — which gives you a concrete, physiology-grounded reference to score explanations against. Diffuse or rhythm diagnoses don't offer that.
 
 - **"Do you have funding?"**
-  Be honest — this is currently a team/self-funded project using public data and open-source tools; no grant yet. If he asks about resourcing, be ready to say you're open to discussing whether a small institutional or center-level support (e.g., AIHealth Institute) might be worth pursuing later, but the study is designed to run without it.
+  Be honest — this is currently a team/self-funded project using public data and open-source tools; no grant yet. If asked about resourcing, be ready to say you're open to discussing whether a small institutional or center-level support (e.g., AIHealth Institute) might be worth pursuing later, but the study is designed to run without it.
 
 - **"Who else is on the team?"**
-  Vân, Nhân, Hùng, and you (Tâm) — mention their divided responsibilities briefly (model training, attribution pipeline, concordance metric, project/statistics lead) so he sees it's a real, organized team, not a one-person ask.
+  Vân, Nhân, Dang Nguyen, Hoàng Tâm, Hùng, and you (Tâm) — mention their divided responsibilities briefly (model training, attribution pipeline, concordance metric, project/statistics lead) so they see it's a real, organized team, not a one-person ask.
 
 - **"What do you need from me right now, today?"**
   Be ready with a clear, small first ask: *"A yes/no on whether you're willing to serve as PI or co-PI on the IRB submission, and if yes, I'll send over a short protocol draft for your review this week."*
@@ -97,10 +97,10 @@ Use this as the "here's the plan" walk-through — condensed from the full runbo
 
 ## 6. Closing (1–2 min)
 
-- Summarize what you heard him say he's willing to do (mirror it back so there's no ambiguity).
+- Summarize what you heard them say they're willing to do (mirror it back so there's no ambiguity).
 - Confirm concrete next step and date, e.g.:
   > "I'll send the protocol draft and the full proposal by [date]. Could we check in again in [X weeks] once MIMIC credentialing and the IRB draft are further along?"
-- Thank him again, and offer to loop him in on the shared repo/tracker if he wants visibility into progress.
+- Thank them again, and offer to loop them in on the shared repo/tracker if they want visibility into progress.
 
 ---
 
@@ -109,6 +109,6 @@ Use this as the "here's the plan" walk-through — condensed from the full runbo
 - **One-liner:** "We're benchmarking whether ECG-AI explanation methods actually point to real diagnostic evidence for MI, and whether that holds across hospitals."
 - **The ask:** IRB PI/co-PI sponsorship for a minimal-risk, 2–3-cardiologist rating study.
 - **Data:** 100% public (PTB-XL + MIMIC-IV-ECG), no new patient data.
-- **His time cost:** front-loaded IRB signature + light ongoing input; ~1–1.5 hrs if he also rates.
-- **Timeline:** ~4–6 months total; his part matters most in Phase 5 (weeks 5–10).
-- **Team:** Vân, Nhân, Hùng, Tâm — already assigned and working.
+- **Their time cost:** front-loaded IRB signature + light ongoing input; ~1–1.5 hrs if they also rate.
+- **Timeline:** ~4–6 months total; their part matters most in Phase 5 (weeks 5–10).
+- **Team:** Vân, Nhân, Dang Nguyen, Hoàng Tâm, Hùng, Tâm — already assigned and working.

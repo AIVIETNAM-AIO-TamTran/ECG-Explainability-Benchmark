@@ -162,7 +162,7 @@ C(m,i) = ( Σ |attribution| inside diagnostic mask ) / ( Σ |attribution| over a
 - **Datasets need NO new IRB.** PTB-XL was ethics-approved for open release; MIMIC-IV-ECG collection was IRB-reviewed at BIDMC with a consent waiver — downstream use only needs PhysioNet credentialing (CITI "Data or Specimens Only Research" + DUA). Still obtain a written **exempt / non-human-subjects determination** letter from an institution for the manuscript's ethics statement.
 - **The expert-rating step DOES need IRB review** — the cardiologists are human subjects (their judgments are the data), even though the ECGs are public/de-identified. Almost certainly **exempt/expedited**. Do NOT self-declare; the IRB must issue the determination.
 - **Path (chosen):** Option 2 — a WashU faculty collaborator serves as PI/co-PI (since submitting as PI at a prior institution isn't available).
-- **Collaboration status:** Outreach to **Dr. Kan Li** (kanl@wustl.edu — Professor of Medicine/Cardiology, Director of Echocardiography Lab; CNN-based cardiac imaging researcher). Meeting scheduled. Backup channel: AIHealth Institute (aihealth@wustl.edu). See `docs/collaboration/`.
+- **Collaboration status:** Outreach underway to a prospective PI/co-PI and senior author (WashU Cardiology faculty; CNN-based cardiac imaging researcher). Meeting scheduled. Backup channel: AIHealth Institute (aihealth@wustl.edu). See `docs/collaboration/`.
 - **Submit IRB in Phase 0, in parallel with MIMIC credentialing** — both are calendar-bound (2–6 weeks) and outside our control.
 
 ---

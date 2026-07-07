@@ -41,7 +41,7 @@ git push -u origin main
 ## 5. Recommended before making it public
 
 - Add a `LICENSE` file (MIT is common for research code; check with collaborators/institution first).
-- Keep the repo **private** until the IRB determination and collaboration with Dr. Kan Li are settled.
+- Keep the repo **private** until the IRB determination and PI/co-PI collaboration are settled.
 - Never commit the expert-rating ID→method key, PhysioNet credentials, or raw ECG data
   (all already git-ignored).
 

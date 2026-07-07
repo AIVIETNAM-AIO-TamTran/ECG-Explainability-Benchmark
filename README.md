@@ -25,7 +25,7 @@ ecg-xai-ami/
 │   ├── 04_DATA_LABELS_AND_SAMPLING.md   PTB-XL schema, 71→MI mapping, sample funnel
 │   ├── 05_LITERATURE_AND_GAP.md   verified citations + the contradiction
 │   ├── Review_Tracker.xlsx        team reading list + assignments
-│   └── collaboration/             Dr. Kan Li meeting notes, transcript, slides
+│   └── collaboration/             PI/co-PI outreach meeting notes, transcript, slides
 ├── src/
 │   ├── config.py                  central config: paths, label defs, folds, seed, masks
 │   ├── utils.py                   seeding · device · attribution norm · bootstrap CIs
