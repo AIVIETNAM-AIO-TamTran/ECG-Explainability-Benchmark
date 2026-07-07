@@ -1,0 +1,21 @@
+name: ecg-xai-ami
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - tabulate
+  - pytest
+  - pip:
+      - torch
+      - wfdb
+      - neurokit2
+      - captum
+      - quantus

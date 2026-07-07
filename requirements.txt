@@ -1,0 +1,18 @@
+# Core
+torch
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+tqdm
+tabulate        # pandas .to_markdown() for the data card
+pytest          # unit tests (tests/)
+# ECG I/O + delineation
+wfdb
+neurokit2
+# xAI + evaluation
+captum
+quantus
+# fastai xresnet1d implementation (via the PTB-XL benchmark repo) — install per its instructions:
+#   github.com/helme/ecg_ptbxl_benchmarking

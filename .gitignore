@@ -1,0 +1,43 @@
+# ---- Data (NEVER commit raw ECG data: PhysioNet licensing + size) ----
+data/ptbxl/
+data/mimic_iv_ecg/
+data/processed/
+*.npy
+*.npz
+*.hea
+*.dat
+*.mat
+
+# ---- Model checkpoints / attributions (large binaries) ----
+models/*.pth
+models/*.pt
+models/*.ckpt
+attributions/
+results/*.csv
+results/*.parquet
+
+# ---- Credentials / secrets ----
+.env
+*.key
+credentials*
+wandb/
+
+# ---- Expert-rating keys (blinding integrity: keep the ID->method key OUT of git) ----
+expert_rating_key*.csv
+**/rating_key*.csv
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+env/
+*.egg-info/
+
+# ---- OS / editor ----
+.DS_Store
+.vscode/
+.idea/
+
+# Keep empty dirs
+!**/.gitkeep
